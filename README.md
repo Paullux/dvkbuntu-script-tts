@@ -22,7 +22,7 @@ Ouvre un **rectangle de sélection** pour y **lire le contenu.**
 ```./Power.sh shutdown```
 **Éteint le pc.**   
     
-```./Power.sh reboot```  
+```./Power.sh reboot```
 **Redémarre le PC**
 
 ## ChangerFenetre.sh
@@ -44,10 +44,10 @@ Ouvre un **rectangle de sélection** pour y **lire le contenu.**
 
 ## LectureNotifs.sh
   
-   __Rôle :__ Lance la lecture automatique en vocale de toute les notifications.
+   __Rôle :__ Lance la lecture automatique en vocale de toute les notifications:
    ```./LectureNotifs.sh```
      
-   **Attention nécessite de redémarrer pour être arrêté.**
+   **Attention nécessite de redémarrer le pc pour être arrêté.**
 
 ## LectureHeure.sh
   
@@ -61,12 +61,12 @@ Ouvre un **rectangle de sélection** pour y **lire le contenu.**
 
 ## FenetreCourante.sh
   
-   __Rôle :__ Vocalise le nom de la fenêtre de premier plan.
+   __Rôle :__ Vocalise le nom de la fenêtre de premier plan.  
 ```./FenetreCourante.sh```
    
 ## FacteurEchelle.sh
   
- __Rôle :__ Change le facteur d'échelle sur DVKBuntu, Pour permettre à un mal voyant de mieux voir l'écran :
+ __Rôle :__ Change le facteur d'échelle sur DVKBuntu, Pour permettre à un mal voyant de mieux voir l'écran :  
 ```./FacteurEchelle.sh x.y```
 
 **Où x.y est un nombre à 1 chiffre après la virgule (ici un point car mode anglais).** Par exemple 1.0 ou 2.8.
