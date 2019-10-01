@@ -1,2 +1,2 @@
  #!/bin/bash
-espeak -v mb/mb-fr4 -s 130 "$(cat /proc/"$(xdotool getwindowpid "$(xdotool getactivewindow)")"/comm)"
+google_speech -l fr-fr "$(cat /proc/"$(xdotool getwindowpid "$(xdotool getactivewindow)")"/comm)"

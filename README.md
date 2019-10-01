@@ -72,4 +72,7 @@ Ouvre un **rectangle de sélection** pour y **lire le contenu.**
 **Où x.y est un nombre à 1 chiffre après la virgule (ici un point car mode anglais).** Par exemple 1.0 ou 2.8.
 
 ## Dépendance :
-***espeak, wmctrl, dvkbuntu, xdotool, kde-plasma, tesseract, scrot, imagemagick.***
+***espeak, wmctrl, dvkbuntu, xdotool, kde-plasma, tesseract, scrot, imagemagick, notify-send.***
+  
+  ***google_speech***
+```pip install google_speech```

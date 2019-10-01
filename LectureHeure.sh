@@ -26,5 +26,5 @@ if [ ! -z $(ps -A | grep mbrola | awk '{ print $1 }' ) ]; then
 fi
 
 ##### Notification de l'heure #####
-espeak -v $TYPE -s 130 -p 30 "ilè/$HEURE/heure/et/$MINUTE/minute" | mbrola $VOIX - -.au | aplay &
+google_speech -l fr-fr "ilè/$HEURE/heure/et/$MINUTE/minute" 
 notify-send -i "/usr/share/icons/HighContrast/scalable/actions-extra/history-view.svg" "`date`"

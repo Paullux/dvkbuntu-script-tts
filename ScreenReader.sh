@@ -35,19 +35,20 @@ a="La fenêtre courante est"
 b=$(cat /proc/"$(xdotool getwindowpid $(xdotool getactivewindow))"/comm)
 c="La fenêtre courante contient"
 d="${a} ${b} ${c}"
-espeak -v mb/mb-fr4 -s 130 "$d"
+google_speech -l fr-fr "$d"
 scrot -u -o "$workDir"/OCR.png;;
     selection)
+google_speech -l fr-fr  "sélectionnez la zone à lire"
 import "$workDir"/OCR.png;;
     *) a="Vous devez préciser une option"
-espeak -v mb/mb-fr4 -s 130  "$a" 
+google_speech -l fr-fr  "$a" 
 exit 0;;
 esac
 
 #OCR
 tesseract "$workDir"/OCR.png "$workDir"/text -l fra
 #TTS
-espeak -v mb/mb-fr4 -s 130 < "$workDir"/text.txt
+google_speech -l fr-fr "$(cat "$workDir"/text.txt)"
 
 #delete work folder
 rm -rf "$workDir"
