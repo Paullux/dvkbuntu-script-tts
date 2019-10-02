@@ -5,7 +5,7 @@ Pour un meilleur confort d'utilisation, j'ai utilisé google_speech dans les scr
 ``google_speech -l fr-fr``  
 par  
 ``espeak -v mb/mb-fr4 -s 130``  
-A terme, je vais créer une interface pour choisir la version **libre et local** ou **Google qui utilise le réseau mais qui est sous licence LGPLv2.1** de la __*synthèse vocale*__.  
+A terme, je vais créer une interface pour choisir la version **libre et local** ou **Google** qui utilise le réseau mais qui est sous licence LGPLv2.1 de la __*synthèse vocale*__.  
 
 ## ScreenReader.sh
 
