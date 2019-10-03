@@ -30,7 +30,7 @@ posY01=$(($Y-$NegY01Offset))
 case $1 in
     souris)
 scrot -a "$posX01","$posY01","$posX10","$posY10" -o "$workDir"/OCR.png;;
-    fenCourante)
+fenCourante)
 a="La fenêtre courante est"
 b=$(cat /proc/"$(xdotool getwindowpid $(xdotool getactivewindow))"/comm)
 c="La fenêtre courante contient"
@@ -39,7 +39,22 @@ google_speech -l fr-fr "$d"
 scrot -u -o "$workDir"/OCR.png;;
     selection)
 google_speech -l fr-fr  "sélectionnez la zone à lire"
-import "$workDir"/OCR.png;;
+scrot --select -o "$workDir"/OCR.png;;
+#google_speech -l fr-fr  "sélectionnez la zone à lire"
+#until [ xdotool click 1 ]
+#do
+#eval $(xdotool getmouselocation --shell)
+#posX01=$X
+#posY01=$Y
+#done
+#until [ xdotool click 1 ]
+#do
+#eval $(xdotool getmouselocation --shell)
+#posX02=$X
+#posY02=$Y
+#done
+#echo "" | lemonbar -n my_lemonbar -d -g "$($posX02-$posX01)"x"$($posY02-$posY01)"+"$posX01"+"$posY01" -B '#88000000' &
+#scrot -a "$posX01","$posY01","$posX02","$posY02" -o "$workDir"/OCR.png;;
     *) a="Vous devez préciser une option"
 google_speech -l fr-fr  "$a" 
 exit 0;;
@@ -49,6 +64,9 @@ esac
 tesseract "$workDir"/OCR.png "$workDir"/text -l fra
 #TTS
 google_speech -l fr-fr "$(cat "$workDir"/text.txt)"
+
+#arrêt sélection
+#kill $(pgrep -f "lemonbar -n my_lemonbar")
 
 #delete work folder
 rm -rf "$workDir"
