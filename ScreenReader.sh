@@ -47,7 +47,7 @@ if $MOUSE; then
     posX01=$(($X-$NegX01Offset))
     posY01=$(($Y-$NegY01Offset))
     #ScreenShot
-    scrot -a "$posX01","$posY01","$posX10","$posY10" -o "$workDir"/OCR.png;;
+    scrot -a "$posX01","$posY01","$posX10","$posY10" -o "$workDir"/OCR.png
 fi
 
 if $CURRENT_WINDOW; then
@@ -65,7 +65,7 @@ if $SELECTION; then
     #To prepare the commande
     google_speech -l fr-fr  "sélectionnez la zone à lire"
     #ScreenShot
-    import "$workDir"/OCR.png;;
+    import "$workDir"/OCR.png
 fi
 
 
