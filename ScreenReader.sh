@@ -14,6 +14,10 @@ MOUSE=false
 CURRENT_WINDOW=false
 SELECTION=false
 
+# Initialisation curseur
+eval $(xdotool getmouselocation --shell)
+Xo=$X
+Yo=$Y
 
 #Options choice
 case $1 in
@@ -50,6 +54,8 @@ if $MOUSE; then
     eval $(xdotool getmouselocation --shell)
     posX01=$(($X-$NegX01Offset))
     posY01=$(($Y-$NegY01Offset))
+    #Drawing Rectangle
+    lemonbar -n my_lemonbar -d -g "$posX10"x"$posY10"+"$posX01"+"$posY01" -B '#88000000' &
     #ScreenShot
     scrot -a "$posX01","$posY01","$posX10","$posY10" -o "$workDir"/OCR.png
 fi
@@ -78,25 +84,10 @@ tesseract "$workDir"/OCR.png "$workDir"/text -l fra
 #Lecture du texte déchiffrer par OCR grâce au TTS
 google_speech -l fr-fr "$(cat "$workDir"/text.txt)"
 
+#kill rectangle
+sleep 3
+kill $(pgrep -f "lemonbar -n my_lemonbar")
+kill $(pgrep -f "lemonbar -n my_lemonbar")
+
 #delete work folder
 rm -rf "$workDir"
-
-# To study
-#scrot --select -o "$workDir"/OCR.png;;
-#google_speech -l fr-fr  "sélectionnez la zone à lire"
-#until [ xdotool click 1 ]
-#do
-#eval $(xdotool getmouselocation --shell)
-#posX01=$X
-#posY01=$Y
-#done
-#until [ xdotool click 1 ]
-#do
-#eval $(xdotool getmouselocation --shell)
-#posX02=$X
-#posY02=$Y
-#done
-#echo "" | lemonbar -n my_lemonbar -d -g "$($posX02-$posX01)"x"$($posY02-$posY01)"+"$posX01"+"$posY01" -B '#88000000' &
-#scrot -a "$posX01","$posY01","$posX02","$posY02" -o "$workDir"/OCR.png;;
-#arrêt sélection
-#kill $(pgrep -f "lemonbar -n my_lemonbar")
