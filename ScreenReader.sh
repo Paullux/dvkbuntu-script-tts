@@ -10,6 +10,10 @@ workDir="/tmp/OCR"
 unset MOUSE
 unset CURRENT_WINDOW
 unset SELECTION
+MOUSE=false
+CURRENT_WINDOW=false
+SELECTION=false
+
 
 #Options choice
 case $1 in
