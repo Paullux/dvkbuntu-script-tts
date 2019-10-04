@@ -39,7 +39,8 @@ google_speech -l fr-fr "$d"
 scrot -u -o "$workDir"/OCR.png;;
     selection)
 google_speech -l fr-fr  "sélectionnez la zone à lire"
-scrot --select -o "$workDir"/OCR.png;;
+import "$workDir"/OCR.png;;
+#scrot --select -o "$workDir"/OCR.png;;
 #google_speech -l fr-fr  "sélectionnez la zone à lire"
 #until [ xdotool click 1 ]
 #do
