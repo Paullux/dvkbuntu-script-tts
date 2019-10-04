@@ -32,24 +32,37 @@ case $1 in
 
     *) 
         #Quit if non choice
-        a="Vous devez préciser une option"
+        a="Vous devez préciser une option valable"
         google_speech -l fr-fr  "$a" 
         exit 0;;
 esac
 
 #Make screenshots
 if $MOUSE; then
+    
+    # Récupération theme actuel
+    CONFIG=$HOME/.config/kcminputrc
+    CURRENT=`kreadconfig5 --file $CONFIG --group Mouse --key cursorTheme`
+    # changement de theme
+    kwriteconfig5 --file $CONFIG --group Mouse --key cursorTheme MonThemeCurseur
+    # Rechargement du thème plasma
+    #kquitapp5 plasmashell
+    #kstart5 plasmashell
+    
+    #Attente retour utilisateur
+    google_speech -l fr-fr  "Appuyer sur n'importe qu'elle touche pour continuer..."
+    read -p "Appuyer sur n'importe qu'elle touche pour continuer... " -n1 -s
     #Rectangle notation :
     # (0,1); (1,1)
     # (0,0); (1,0)
 
     #Offset the screenshot rectangle to the upper-left corner (0,1) by this amount in the X/Y direction
     #Might be a problem for i18n & RTL languages but... Oh, well
-    NegX01Offset=300
-    NegY01Offset=75
+    NegX01Offset=128
+    NegY01Offset=50
     #Size of the rectangle
-    posX10=600
-    posY10=150
+    posX10=256
+    posY10=100
     #Set X,Y to the Cursor position.
     eval $(xdotool getmouselocation --shell)
     posX01=$(($X-$NegX01Offset))
@@ -58,6 +71,10 @@ if $MOUSE; then
     lemonbar -n my_lemonbar -d -g "$posX10"x"$posY10"+"$posX01"+"$posY01" -B '#88000000' &
     #ScreenShot
     scrot -a "$posX01","$posY01","$posX10","$posY10" -o "$workDir"/OCR.png
+    # Remise du theme de Curseur à l'origine
+    kwriteconfig5 --file $CONFIG --group Mouse --key cursorTheme $CURRENT
+    #kquitapp5 plasmashell
+    #kstart5 plasmashell
 fi
 
 if $CURRENT_WINDOW; then
@@ -69,7 +86,7 @@ if $CURRENT_WINDOW; then
     google_speech -l fr-fr "$d"
     #ScreenShot
     scrot -u -o "$workDir"/OCR.png
-fi
+fi 
 
 if $SELECTION; then
     #To prepare the commande
