@@ -16,13 +16,13 @@ SELECTION=false
 
 #Options choice
 case $1 in
-    souris)
+    -m)
         MOUSE=true;;
 
-    fen)
+    -w)
         CURRENT_WINDOW=true;;
 
-    selection)
+    -s)
         SELECTION=true;;
 
     *) 
