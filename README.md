@@ -11,13 +11,13 @@ A terme, je vais créer une interface pour choisir la version **libre et local**
 
 __Rôle :__  lecture d'écran :   
 
-```./ScreenReader.sh souris```
+```./ScreenReader.sh -m```
 Lit le texte placé sous le **curseur de souris.** 
    
-```./ScreenReader.sh fenCourante ```
+```./ScreenReader.sh -w ```
 Lit l'intégralité de la **page active** au moment du lancement de la commande.
   
-```./ScreenReader.sh selection```
+```./ScreenReader.sh -s```
 Ouvre un **rectangle de sélection** pour y **lire le contenu.**   
   
 ## Power.sh
