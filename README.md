@@ -88,7 +88,7 @@ pour ubuntu :
 ```
 sudo apt update
 sudo apt upgrade
-sudo apt install espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify sox lame libsox-fmt-mp3
+sudo apt install espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify-bin sox lame libsox-fmt-mp3
 ``` 
   
   ***google_speech***
