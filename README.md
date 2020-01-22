@@ -84,6 +84,10 @@ Ouvre un **rectangle de sélection** pour y **lire le contenu.**
 
 ## Dépendance :
 ***espeak, wmctrl, dvkbuntu, xdotool, tesseract-ocr-fra sous Ubuntu ( ou tesseract-data-fra sous Arch), scrot, imagemagick, notify-send, sox, lame, libsox-fmt-mp3.***
+pour ubuntu : 
+```sudo apt update
+sudo apt upgrade
+sudo apt install espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify sox lame libsox-fmt-mp3``` 
   
   ***google_speech***
 ```pip3 install google_speech```
