@@ -83,11 +83,15 @@ Ouvre un **rectangle de sélection** pour y **lire le contenu.**
 **Où x.y est un nombre à 1 chiffre après la virgule (ici un point car mode anglais).** Par exemple 1.0 ou 2.8.
 
 ## Dépendance :
-***espeak, wmctrl, dvkbuntu, xdotool, tesseract-ocr-fra sous Ubuntu ( ou tesseract-data-fra sous Arch), scrot, imagemagick, notify-send, sox, lame, libsox-fmt-mp3.***
-pour ubuntu : 
-```sudo apt update
+***espeak, wmctrl, dvkbuntu, xdotool, tesseract-ocr-fra sous Ubuntu ( ou tesseract-data-fra sous Arch), scrot, imagemagick, notify-send, sox, lame, libsox-fmt-mp3.***  
+pour ubuntu :   
+```
+sudo apt update
 sudo apt upgrade
-sudo apt install espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify sox lame libsox-fmt-mp3``` 
+sudo apt install espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify sox lame libsox-fmt-mp3
+``` 
   
   ***google_speech***
-```pip3 install google_speech```
+```
+pip3 install google_speech
+```
