@@ -100,6 +100,9 @@ sudo apt upgrade
 
 sudo apt install nocomprendo espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify-bin sox lame libsox-fmt-mp3 xbacklight  
 
+./install.sh  
+
+
 ``` 
   
   ***google_speech***
