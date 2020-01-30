@@ -7,91 +7,108 @@ par
 ``espeak -v mb/mb-fr4 -s 130``  
 A terme, je vais créer une interface pour choisir la version **libre et local** ou **Google** (qui utilise le réseau mais qui est sous licence LGPLv2.1) de la __*synthèse vocale*__.  
 
-## ScreenReader.sh
+## ScreenReader
 
 __Rôle :__  lecture d'écran :   
 
-```./ScreenReader.sh -m```
+```ScreenReader -m```
 Lit le texte placé sous le **curseur de souris.** 
    
-```./ScreenReader.sh -w ```
+```ScreenReader -w ```
 Lit l'intégralité de la **page active** au moment du lancement de la commande.
   
-```./ScreenReader.sh -s```
+```ScreenReader -s```
 Ouvre un **rectangle de sélection** pour y **lire le contenu.**   
   
-## Power.sh
+## Power
    
    __Rôle :__  Contrôle de l'alimentation du pc :
      
-```./Power.sh shutdown```
+```Power shutdown```
 **Éteint le pc.**   
     
-```./Power.sh reboot```
+```Power reboot```
 **Redémarre le PC**
 
-## ChangerFenetre.sh
+## ChangerFenetre
   
   __Rôle :__  Basculer d'une fenêtre à l'autre :  
     
-  ```./ChangerFenetre.sh ${AppName}```
+  ```ChangerFenetre ${AppName}```
  **Bascule vers** l'application **AppName.**  
    
    **Exemples :**   
-```./ChangerFenetre.sh Konsole```  
-```./ChangerFenetre.sh Dolphin```  
-```./ChangerFenetre.sh Chromium```  
+```ChangerFenetre Konsole```  
+```ChangerFenetre Dolphin```  
+```ChangerFenetre Chromium```  
   
-## ListeFenetresOuvertes.sh
+## ListeFenetresOuvertes
   
   __Rôle :__ Liste en vocale les fenêtres ouvertes.    
     
-  ```./ListeFenetresOuvertes.sh```
+  ```ListeFenetresOuvertes```
 
-## LectureNotifs.sh
+## LectureNotifs
   
    __Rôle :__ Lance la lecture automatique en vocale de toute les notifications:  
   
-   ```./LectureNotifs.sh```
+   ```LectureNotifs```
      
    **Attention nécessite de redémarrer le pc pour être arrêté.**
 
-## LectureHeure.sh
+## LectureHeure
   
    __Rôle :__ Donne l'heure.  
   
-   ```./LectureHeure.sh```
+   ```LectureHeure```
      
-## KillFenetre.sh
+## KillFenetre
 
    __Rôle :__ Tue la fenêtre de premier plan.  
   
-   ```./KillFenetre.sh```
+   ```KillFenetre```
 
-## FenetreCourante.sh
+## FenetreCourante
   
    __Rôle :__ Vocalise le nom de la fenêtre de premier plan.  
   
-```./FenetreCourante.sh```
+```FenetreCourante```
    
-## FacteurEchelle.sh
+## FacteurEchelle
   
  __Rôle :__ Change le facteur d'échelle sur DVKBuntu, Pour permettre à un mal voyant de mieux voir l'écran :  
   
-```./FacteurEchelle.sh x.y```
+```FacteurEchelle x.y```
 
 **Où x.y est un nombre à 1 chiffre après la virgule (ici un point car mode anglais).** Par exemple 1.0 ou 2.8.
 
 ## Dépendance :
-***espeak, wmctrl, dvkbuntu, xdotool, tesseract-ocr-fra sous Ubuntu ( ou tesseract-data-fra sous Arch), scrot, imagemagick, notify-send, sox, lame, libsox-fmt-mp3.***  
+***espeak, wmctrl, dvkbuntu, xdotool, tesseract-ocr-fra sous Ubuntu ( ou tesseract-data-fra sous Arch), scrot, imagemagick, notify-send, sox, lame, libsox-fmt-mp3, xbacklight, nocomprendo.***  
 pour ubuntu :   
+
 ```
-sudo apt update
-sudo apt upgrade
-sudo apt install espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify-bin sox lame libsox-fmt-mp3
+
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/be-root:/nocomprendo/xUbuntu_19.10/ /' > /etc/apt/sources.list.d/home:be-root:nocomprendo.list"  
+
+wget -nv https://download.opensuse.org/repositories/home:be-root:nocomprendo/xUbuntu_19.10/Release.key -O Release.key  
+
+sudo apt-key add - < Release.key  
+
+sudo apt update  
+
+sudo apt upgrade  
+
+sudo apt install nocomprendo espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify-bin sox lame libsox-fmt-mp3 xbacklight  
+
 ``` 
   
   ***google_speech***
 ```
-pip3 install google_speech
-```
+pip3 install 
+```  
+
+
+## Pour utiliser avec ***nocomprendo*** un assistant vocale sous linux.
+
+ouvrez __*nocomprendo*__ et dans le menu Sélecteur de groupes de commandes importer le fichier dvkbuntu.noc  
+Parcourer la liste des commandes pour voir ce que vous pouvez faire à la voix.
