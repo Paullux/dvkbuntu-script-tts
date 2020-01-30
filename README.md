@@ -108,7 +108,7 @@ pip3 install
 ```  
 
 
-## Pour utiliser avec ***nocomprendo*** un assistant vocale sous linux.
+## Pour utiliser avec ***nocomprendo*** un assistant vocal sous linux.
 
 ouvrez __*nocomprendo*__ et dans le menu Sélecteur de groupes de commandes importer le fichier dvkbuntu.noc  
 Parcourer la liste des commandes pour voir ce que vous pouvez faire à la voix.
