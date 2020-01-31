@@ -1,4 +1,30 @@
 #!/bin/bash
 
-google_speech -l fr-fr "sélection de la fenêtre de "$1"" 
-wmctrl -a "$1"
+a=$(wmctrl -root -children -l | grep -o "$HOSTNAME.*" | sed "s/$HOSTNAME //g" | awk -F "— " '{ print $NF }' | awk -F "- " '{ print $NF }' | sed '/Plasma/d' | sed 's/^Slack.*éléments/slack/g' | sed 's/^Slack.*opensource/slack/g' | sed 's/^Latte.*Dock//g' | sed 's/^Google.*Chrome/google-chrome/g' | sed 's/^Gestionnaire.*Muon/muon/g' | tr '[:upper:]' '[:lower:]' | sed '/^/G')
+echo $a
+
+spac=${a//$'\n'/ }
+IFS=' ' read -ra b <<< "$spac"; declare -p spac;
+
+#b=$(echo $a | tr " " "\n")
+#sIFS=', ' read -ra b <<< "$b"; declare -p a;
+
+
+echo $b
+
+echo ${b[0]}
+echo ${b[1]}
+
+c=$(xdotool getwindowfocus getwindowname | awk -F "— " '{ print $NF }' | awk -F "- " '{ print $NF }' | sed '/Plasma/d' | sed 's/^Slack.*éléments/slack/g' | sed 's/^Slack.*opensource/slack/g' | sed 's/^Latte.*Dock/lattedock/g' | sed 's/^Google.*Chrome/google-chrome/g' | sed 's/^Gestionnaire.*Muon/muon/g' | tr '[:upper:]' '[:lower:]' | sed '/^/G')
+echo $c
+
+if [ "${b[0]}" = "$c" ]
+then 
+    d=${b[1]}
+else
+    d=${b[0]}
+fi
+
+google_speech -l fr-fr "Changement de la fenêtre en focus de "$c" à "$d"" 
+
+wmctrl -a $d

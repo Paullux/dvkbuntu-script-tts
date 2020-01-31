@@ -11,6 +11,12 @@ augmenter oo gg mm an tt ei
 augmenter(2) oo gg mm an tt ei rr
 baisser bb ai ss ei
 baisser(2) bb ai ss ei rr
+change ch an jj
+change(2) ch an jj ai
+change(3) ch an jj ai tt
+change(4) ch an jj ee
+change(5) ch an jj ei
+change(6) ch an jj ei rr
 donne dd oo nn
 donne(2) dd oo nn ee
 échelle ai ch ai ll
@@ -26,6 +32,10 @@ lheure ll oe rr
 lheure(2) ll oe rr ee
 lheure(3) ll oe rr ee zz
 lheure(4) ll oe rr zz
+lheure(5) oe rr
+lheure(6) oe rr ee
+lheure(7) oe rr ee zz
+lheure(8) oe rr zz
 lire ll ii rr
 lire(2) ll ii rr ee
 liste ll ii ss tt
@@ -78,3 +88,4 @@ volume(2) vv oo ll uu mm ee
 4 : lire sélectionner : /usr/bin/ScreenReader -s
 4 : éteindre : /usr/bin/Power shutdown
 4 : redémarrer : /usr/bin/Power reboot
+4 : change fenêtre active : /usr/bin/ChangerFenetre
