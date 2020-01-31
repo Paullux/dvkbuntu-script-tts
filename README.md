@@ -107,7 +107,7 @@ sudo apt install nocomprendo espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra sc
   
   ***google_speech***
 ```
-pip3 install 
+pip3 install google_speech
 ```  
 
 
