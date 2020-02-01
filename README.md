@@ -38,9 +38,7 @@ Ouvre un **rectangle de sélection** pour y **lire le contenu.**
  **Bascule vers** vers une **autre** application.  
    
    **Exemples :**   
-```ChangerFenetre Konsole```  
-```ChangerFenetre Dolphin```  
-```ChangerFenetre Chromium```  
+```ChangerFenetre```  
   
 ## ListeFenetresOuvertes
   
@@ -102,7 +100,7 @@ cd dvkbuntu-script-tts
   
   ***google_speech***
 ```
-pip3 install google_speech
+sudo pip3 install google_speech
 ```  
 
 
