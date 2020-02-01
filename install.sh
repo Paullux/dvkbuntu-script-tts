@@ -27,5 +27,5 @@ cp FenetreCourante /usr/bin/FenetreCourante
 cp FacteurEchelle /usr/bin/FacteurEchelle
 cp ChangerFenetre /usr/bin/ChangerFenetre
 
-tar xvzf fr_FR.tar.gz -C ~/.config/nocomprendo/
-chown -R $USER ~/.config/nocomprendo/
+tar xvzf fr_FR.tar.gz -C /home/"$SUDO_USER"/.config/nocomprendo/
+chown -R $SUDO_USER /home/"$SUDO_USER"/.config/nocomprendo/
