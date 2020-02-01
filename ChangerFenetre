@@ -25,6 +25,6 @@ else
     d=${b[0]}
 fi
 
-google_speech -l fr-fr "Changement de la fenêtre en focus de "$c" à "$d"" 
+/etc/alternatives/tts "Changement de la fenêtre en focus de "$c" à "$d"" 
 
 wmctrl -a $d

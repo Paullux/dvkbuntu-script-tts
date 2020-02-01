@@ -80,5 +80,5 @@ if [ ! -z $(ps -A | grep mbrola | awk '{ print $1 }' ) ]; then
 fi
 
 ##### Notification de l'heure #####
-google_speech -l fr-fr "il est $HEURE $nombresDheure et $MINUTE $nombresDeMinute" 
+/etc/alternatives/tts "il est $HEURE $nombresDheure et $MINUTE $nombresDeMinute" 
 notify-send -i "/usr/share/icons/HighContrast/scalable/actions-extra/history-view.svg" "`date`"

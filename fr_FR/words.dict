@@ -1,0 +1,356 @@
+.0 pp ww in tt zz ai rr au
+.0(2) pp ww in tt zz ei rr au
+.0(3) pp ww in zz ai rr au
+.0(4) pp ww in zz ei rr au
+.1 pp ww in tt un
+.1(2) pp ww in tt un nn
+.1(3) pp ww in un
+.1(4) pp ww in un nn
+.2 pp ww in dd eu
+.2(2) pp ww in tt dd eu
+.3 pp ww in tt rr ww aa
+.3(2) pp ww in tt tt rr ww aa
+.4 pp ww in kk aa tt rr
+.4(2) pp ww in kk aa tt rr ee
+.4(3) pp ww in tt kk aa tt rr
+.4(4) pp ww in tt kk aa tt rr ee
+.5 pp ww in ss in
+.5(2) pp ww in ss in kk
+.5(3) pp ww in tt ss in
+.5(4) pp ww in tt ss in kk
+.6 pp ww in ss ii
+.6(2) pp ww in ss ii ss
+.6(3) pp ww in ss ii zz
+.6(4) pp ww in tt ss ii
+.6(5) pp ww in tt ss ii ss
+.6(6) pp ww in tt ss ii zz
+.7 pp ww in ss ai tt
+.7(2) pp ww in tt ss ai tt
+.8 pp ww in tt uy ii
+.8(2) pp ww in tt uy ii tt
+.8(3) pp ww in uy ii
+.8(4) pp ww in uy ii tt
+.9 pp ww in nn eu ff
+.9(2) pp ww in nn oe ff
+.9(3) pp ww in tt nn eu ff
+.9(4) pp ww in tt nn oe ff
+1 un
+1(2) un nn
+1(3) uu nn ee
+2 dd eu
+2(2) dd eu zz
+3 tt rr ww aa
+3(2) tt rr ww aa zz
+4 kk aa tt
+4(2) kk aa tt rr
+4(3) kk aa tt rr ee
+5 ss in
+5(2) ss in kk
+5(3) ss in kk ee
+6 ss ii
+6(2) ss ii ss
+6(3) ss ii ss ee
+6(4) ss ii zz
+7 ss ai tt
+8 uy ii
+8(2) uy ii tt
+8(3) uy ii tt ee
+9 nn eu ff
+9(2) nn oe ff
+10 dd ii
+10(2) dd ii kk ss
+10(3) dd ii ss
+10(4) dd ii zz
+active aa kk tt ii vv
+active(2) aa kk tt ii vv ee
+adresse aa dd rr ai ss
+adresse(2) aa dd rr ai ss ee
+afficher aa ff ii ch
+afficher(2) aa ff ii ch ee
+afficher(3) aa ff ii ch ei
+afficher(4) aa ff ii ch ei rr
+agrandir aa gg rr an dd ii
+agrandir(2) aa gg rr an dd ii rr
+alterner aa ll tt ai rr nn
+alterner(2) aa ll tt ai rr nn ee
+alterner(3) aa ll tt ai rr nn ei
+alterner(4) aa ll tt ai rr nn ei rr
+annuler aa nn uu ll ei
+annuler(2) aa nn uu ll ei rr
+application aa pp ll ii kk aa ss yy on
+appuyer aa pp uy ii
+appuyer(2) aa pp uy ii yy ei
+appuyer(3) aa pp uy ii yy ei rr
+arrêter aa rr ai tt
+arrêter(2) aa rr ai tt ei
+arrêter(3) aa rr ai tt ei rr
+arrière aa rr yy ai rr
+arrière(2) aa rr yy ai rr ee
+audio au dd yy au
+augmenter oo gg mm an tt ei
+augmenter(2) oo gg mm an tt ei rr
+avancer aa vv an ss
+avancer(2) aa vv an ss ee
+avancer(3) aa vv an ss ei
+avancer(4) aa vv an ss ei rr
+baisser bb ai ss ei
+baisser(2) bb ai ss ei rr
+bas bb aa
+bas(2) bb aa ss
+bas(3) bb aa zz
+basculer bb aa ss kk uu ll
+basculer(2) bb aa ss kk uu ll ee
+basculer(3) bb aa ss kk uu ll ei
+basculer(4) bb aa ss kk uu ll ei rr
+bureau bb uu rr au
+centre ss an tt rr
+centre(2) ss an tt rr ee
+change ch an jj
+change(2) ch an jj ai
+change(3) ch an jj ai tt
+change(4) ch an jj ee
+change(5) ch an jj ei
+change(6) ch an jj ei rr
+chercher ch ai rr ch
+chercher(2) ch ai rr ch ei
+chercher(3) ch ai rr ch ei rr
+cinquième ss in kk yy ai mm
+cinquième(2) ss in kk yy ai mm ee
+clic kk ll ii kk
+coller kk oo ll
+coller(2) kk oo ll ee
+coller(3) kk oo ll ei
+coller(4) kk oo ll ei rr
+commande kk oo mm an dd
+commande(2) kk oo mm an dd ee
+configuration kk on ff ii gg uu rr aa ss yy on
+console kk on ss oo ll
+continue kk on tt ii nn uu
+copier kk oo pp yy
+copier(2) kk oo pp yy ei
+copier(3) kk oo pp yy ei rr
+couper kk ou pp
+couper(2) kk ou pp ee
+couper(3) kk ou pp ei
+couper(4) kk ou pp ei rr
+début dd ai bb uu
+démarrer dd ai mm aa rr
+démarrer(2) dd ai mm aa rr ee
+démarrer(3) dd ai mm aa rr ei
+démarrer(4) dd ai mm aa rr ei rr
+déplacer dd ai pp ll aa ss
+déplacer(2) dd ai pp ll aa ss ei
+déplacer(3) dd ai pp ll aa ss ei rr
+descendre dd ai ss an
+descendre(2) dd ai ss an dd rr
+descendre(3) dd ai ss an dd rr ee
+deuxième dd ee zz yy ai mm
+deuxième(2) dd ee zz yy ai mm ee
+deuxième(3) ss ee gg on
+deuxième(4) ss ee gg on dd
+deuxième(5) ss ee gg on tt
+disque dd ii ss kk
+disque(2) dd ii ss kk ee
+document dd oo kk uu mm an
+donne dd oo nn
+donne(2) dd oo nn ee
+dossier dd oo ss yy ei
+droite dd rr ww aa tt
+échapper ai ch aa pp
+échapper(2) ai ch aa pp ee
+échapper(3) ai ch aa pp ei
+échapper(4) ai ch aa pp ei rr
+échelle ai ch ai ll
+échelle(2) ai ch ai ll ee
+écoute ai kk ou tt
+écran ai kk rr an
+éditer ai dd ii tt
+éditer(2) ai dd ii tt ee
+éditer(3) ai dd ii tt ei
+éditer(4) ai dd ii tt ei rr
+éditer(5) ai dd ii tt oe rr
+effacer ai ff aa ss ei
+effacer(2) ai ff aa ss ei rr
+encore an kk oo rr
+encore(2) an kk oo rr ee
+enregistrer an rr ee jj ii ss tt rr
+enregistrer(2) an rr ee jj ii ss tt rr ei
+enregistrer(3) an rr ee jj ii ss tt rr ei rr
+entrer an tt rr ei
+espace ai ss pp aa ss
+espace(2) ai ss pp aa ss ee
+éteindre ai tt in dd rr
+éteindre(2) ai tt in dd rr ee
+explorateur ai kk ss pp ll oo rr aa tt oe rr
+facteur ff aa kk tt oe rr
+fenêtre ff ee nn ai tt rr
+fermer ff ai rr mm
+fermer(2) ff ai rr mm ei
+fermer(3) ff ai rr mm ei rr
+fichier ff ii ch yy ei
+fin ff in
+flux ff ll uu
+flux(2) ff ll uu zz
+gauche gg au ch
+glisser gg ll ii ss ei
+glisser(2) gg ll ii ss ei rr
+haut au
+haut(2) au tt
+historique ii ss tt oo rr ii kk
+historique(2) ii ss tt oo rr ii kk ee
+huitième uy ii tt yy ai mm
+huitième(2) uy ii tt yy ai mm ee
+lecteur ll ai kk tt oe rr
+lheure ll oe rr
+lheure(2) ll oe rr ee
+lheure(3) ll oe rr ee zz
+lheure(4) ll oe rr zz
+lheure(5) oe rr
+lheure(6) oe rr ee
+lheure(7) oe rr ee zz
+lheure(8) oe rr zz
+lire ll ii rr
+lire(2) ll ii rr ee
+liste ll ii ss tt
+liste(2) ll ii ss tt ee
+liste(3) ll ii ss tt ei
+liste(4) ll ii ss tt ei rr
+luminosité ll uu mm ii nn oo zz ii tt ei
+maintenant mm in tt ee nn an
+maison mm ai zz on
+maximiser mm aa kk ss ii mm ii zz
+maximiser(2) mm aa kk ss ii mm ii zz ei
+maximiser(3) mm aa kk ss ii mm ii zz ei rr
+mémento mm ai mm ai nn tt au
+mémento(2) mm ai mm an tt au
+menu mm ee nn uu
+moi mm au ii
+moi(2) mm ww aa
+molette mm oo ll ai tt
+molette(2) mm oo ll ai tt ee
+monter mm on tt
+monter(2) mm on tt ei
+monter(3) mm on tt ei rr
+navigateur nn aa vv ii gg aa tt oe rr
+neuvième nn ee vv yy ai mm ee
+neuvième(2) nn eu vv yy ai mm
+normal nn oo rr mm aa ll
+notification nn oo tt ii ff ii kk aa ss yy on
+nouveau nn ou vv ai ll
+nouveau(2) nn ou vv ai ll ee
+nouveau(3) nn ou vv au
+onglet on gg ll ai
+ordinateur oo rr dd ii nn aa tt oe rr
+ouvrir ou vv rr
+ouvrir(2) ou vv rr ii rr
+page pp aa jj
+pense-bête pp an ss bb ai tt
+pense-bête(2) pp an ss bb ai tt ee
+pense-bête(3) pp an ss ee bb ai tt
+pense-bête(4) pp an ss ee bb ai tt ee
+photo ff au tt au
+photo(2) ff oo tt au
+plein pp ll ai nn
+plein(2) pp ll in
+point pp ww in
+point(2) pp ww in tt
+précédent pp rr ai ss ai dd an
+précédent(2) pp rr ai ss ai dd an tt
+premier pp rr ee mm yy ai rr
+premier(2) pp rr ee mm yy ai rr ee
+premier(3) pp rr ee mm yy ei
+premier(4) pp rr ee mm yy ei rr
+présenter pp rr ai zz an tt
+présenter(2) pp rr ai zz an tt ee
+présenter(3) pp rr ai zz an tt ei
+présenter(4) pp rr ai zz an tt ei rr
+processus pp rr oo ss ai ss uu ss
+quatrième kk aa tt rr ii yy ai mm
+quatrième(2) kk aa tt rr ii yy ai mm ee
+quitter kk ii tt
+quitter(2) kk ii tt ei
+rafraîchir rr aa ff rr ai ch ii
+rafraîchir(2) rr aa ff rr ai ch ii rr
+rafraîchir(3) rr aa ff rr ei ch ii
+rafraîchir(4) rr aa ff rr ei ch ii rr
+reculer rr ee kk uu ll
+reculer(2) rr ee kk uu ll ei
+reculer(3) rr ee kk uu ll ei rr
+redémarrer rr ee dd ai mm aa rr ei
+redémarrer(2) rr ee dd ai mm aa rr ei rr
+réduire rr ai dd uy ii
+réduire(2) rr ai dd uy ii rr
+réduire(3) rr ai dd uy ii rr ee
+refaire rr ee ff ai
+refaire(2) rr ee ff ai rr
+refaire(3) rr ee ff ai rr ee
+relâcher rr ee ll aa ch
+relâcher(2) rr ee ll aa ch ee
+relâcher(3) rr ee ll aa ch ei
+relâcher(4) rr ee ll aa ch ei rr
+remonter rr ee mm on tt ei
+remonter(2) rr ee mm on tt ei rr
+répéter rr ai pp ai tt
+répéter(2) rr ai pp ai tt ee
+répéter(3) rr ai pp ai tt ei
+répéter(4) rr ai pp ai tt ei rr
+reprendre rr ee pp rr an
+reprendre(2) rr ee pp rr an dd rr
+reprendre(3) rr ee pp rr an dd rr ee
+reprendre(4) rr ee pp rr an tt
+restaurer rr ai ss tt oo rr
+restaurer(2) rr ai ss tt oo rr ee
+restaurer(3) rr ai ss tt oo rr ei
+restaurer(4) rr ai ss tt oo rr ei rr
+sélectionner ss ai ll ai kk ss yy oo nn
+sélectionner(2) ss ai ll ai kk ss yy oo nn ei
+septième ss ai tt yy ai mm
+septième(2) ss ai tt yy ai mm ee
+session ss ai ss yy on
+sixième ss ii zz yy ai mm
+sixième(2) ss ii zz yy ai mm ee
+souris ss ou rr ii
+stop ss tt au pp
+stop(2) ss tt oo pp
+suivant ss uy ii vv an
+suivant(2) ss uy ii vv an tt
+suivant(3) ss uy ii vv an tt ee
+supprimer ss uu pp rr ii mm
+supprimer(2) ss uu pp rr ii mm ee
+supprimer(3) ss uu pp rr ii mm ei
+supprimer(4) ss uu pp rr ii mm ei rr
+suspendre ss uu ss pp an
+suspendre(2) ss uu ss pp an dd rr
+suspendre(3) ss uu ss pp an dd rr ee
+système ss ii ss tt ai mm
+système(2) ss ii ss tt ai mm ee
+tabulation tt aa bb uu ll aa ss yy on
+taille tt aa yy
+taille(2) tt aa yy ee
+terminer tt ai rr mm ii nn
+terminer(2) tt ai rr mm ii nn ee
+terminer(3) tt ai rr mm ii nn ei
+terminer(4) tt ai rr mm ii nn ei rr
+touche tt ou ch
+touche(2) tt ou ch ee
+tout tt ou
+troisième tt rr ww aa zz yy ai mm
+troisième(2) tt rr ww aa zz yy ai mm ee
+valider vv aa ll ii dd
+valider(2) vv aa ll ii dd ee
+valider(3) vv aa ll ii dd ei
+valider(4) vv aa ll ii dd ei rr
+verrouiller vv ai rr ou yy
+verrouiller(2) vv ai rr ou yy ee
+verrouiller(3) vv ai rr ou yy ei
+verrouiller(4) vv ai rr ou yy ei rr
+verrouiller(5) vv ei rr ou yy
+verrouiller(6) vv ei rr ou yy ee
+vocabulaire vv oo kk aa bb uu ll ai rr
+vocabulaire(2) vv oo kk aa bb uu ll ai rr ee
+vocal vv oo kk aa ll
+vocal(2) vv oo kk aa ll ee
+vocal(3) vv oo kk aa ll ee zz
+vocal(4) vv oo kk aa ll zz
+volume vv oo ll uu mm
+volume(2) vv oo ll uu mm ee

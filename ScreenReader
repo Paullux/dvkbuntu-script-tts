@@ -28,7 +28,7 @@ case $1 in
     *) 
         #Quit if non choice
         a="Vous devez préciser une option valable"
-        google_speech -l fr-fr  "$a" 
+        /etc/alternatives/tts  "$a" 
         exit 0;;
 esac
 
@@ -37,8 +37,8 @@ if $MOUSE; then
     # for distinguishing " ", "\t" from "\n"
     IFS=''
     #Attente retour utilisateur
-    google_speech -l fr-fr  "Appuyer sur espace pour déplacer la sélection..."
-    google_speech -l fr-fr  "Et appuyer sur la touche entrée pour valider la sélection..."
+    /etc/alternatives/tts  "Appuyer sur espace pour déplacer la sélection..."
+    /etc/alternatives/tts  "Et appuyer sur la touche entrée pour valider la sélection..."
     #initialisation de la variable
     pressed="a"
     #lancement de la détection de la validation
@@ -76,14 +76,14 @@ if $CURRENT_WINDOW; then
     b=$(cat /proc/"$(xdotool getwindowpid $(xdotool getactivewindow))"/comm)
     c="La fenêtre courante contient"
     d="${a} ${b} ${c}"
-    google_speech -l fr-fr "$d"
+    /etc/alternatives/tts "$d"
     #ScreenShot
     scrot -u -o "$workDir"/OCR.png
 fi 
 
 if $SELECTION; then
     #To prepare the commande
-    google_speech -l fr-fr  "sélectionnez la zone à lire"
+    /etc/alternatives/tts  "sélectionnez la zone à lire"
     #ScreenShot
     import "$workDir"/OCR.png
 fi
@@ -92,7 +92,7 @@ fi
 #Déchiffrement de la capture par OCR
 tesseract "$workDir"/OCR.png "$workDir"/text -l fra
 #Lecture du texte déchiffrer par OCR grâce au TTS
-google_speech -l fr-fr "$(cat "$workDir"/text.txt)"
+/etc/alternatives/tts "$(cat "$workDir"/text.txt)"
 
 #kill rectangle
 sleep 3
