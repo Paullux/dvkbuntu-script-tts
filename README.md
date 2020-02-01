@@ -96,7 +96,7 @@ sudo apt update
 sudo apt upgrade   
   
 # installation des dépendances :    
-sudo apt install nocomprendo espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify-bin sox lame libsox-fmt-mp3 xbacklight    
+sudo apt install nocomprendo espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify-bin sox lame libsox-fmt-mp3 xbacklight lemonbar    
 sudo pip3 install google_speech  
   
 # travail de l'équipe dvkbuntu   

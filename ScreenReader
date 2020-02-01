@@ -34,40 +34,21 @@ esac
 
 #Make screenshots
 if $MOUSE; then
-    # for distinguishing " ", "\t" from "\n"
-    IFS=''
-    #Attente retour utilisateur
-    /etc/alternatives/tts  "Appuyer sur espace pour déplacer la sélection..."
-    /etc/alternatives/tts  "Et appuyer sur la touche entrée pour valider la sélection..."
-    #initialisation de la variable
-    pressed="a"
-    #lancement de la détection de la validation
-    while [ "$pressed" != "" ]; do
-        #détection de l'appui des touches
-        read -n1 -r -p "Appuyer sur espace pour déplacer la sélection et appuyer sur la touche entrée pour valider la sélection..." pressed
-        #To quit when validate
-        if [ "$pressed" == "" ]; then
-            break
-        fi        
-        #Offset the screenshot rectangle to the upper-left corner (0,1) by this amount in the X/Y direction
-        #Might be a problem for i18n & RTL languages but... Oh, well
-        NegX01Offset=128
-        NegY01Offset=50
-        #Size of the rectangle
-        posX10=256
-        posY10=100
-        #Set X,Y to the Cursor position.
-        eval $(xdotool getmouselocation --shell)
-        posX01=$(($X-$NegX01Offset))
-        posY01=$(($Y-$NegY01Offset))
-        #To take screenShot
-        scrot -a "$posX01","$posY01","$posX10","$posY10" -o "$workDir"/OCR.png
-        #Drawing Rectangle (remove old)
-        kill $(pgrep -f "lemonbar -n my_lemonbar")
-        kill $(pgrep -f "lemonbar -n my_lemonbar")
-        #Drawing Rectangle (real draw)
-        lemonbar -n my_lemonbar -d -g "$posX10"x"$posY10"+"$posX01"+"$posY01" -B '#88ff0000' &
-    done
+    #Offset the screenshot rectangle to the upper-left corner (0,1) by this amount in the X/Y direction
+    #Might be a problem for i18n & RTL languages but... Oh, well
+    NegX01Offset=128
+    NegY01Offset=50
+    #Size of the rectangle
+    posX10=256
+    posY10=100
+    #Set X,Y to the Cursor position.
+    eval $(xdotool getmouselocation --shell)
+    posX01=$(($X-$NegX01Offset))
+    posY01=$(($Y-$NegY01Offset))
+    #Drawing Rectangle (real draw)
+    lemonbar -n my_lemonbar -d -g "$posX10"x"$posY10"+"$posX01"+"$posY01" -B '#88ff0000' &
+    #To take screenShot
+    scrot -a "$posX01","$posY01","$posX10","$posY10" -o "$workDir"/OCR.png
 fi
 
 if $CURRENT_WINDOW; then
