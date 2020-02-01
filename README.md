@@ -34,8 +34,8 @@ Ouvre un **rectangle de sélection** pour y **lire le contenu.**
   
   __Rôle :__  Basculer d'une fenêtre à l'autre :  
     
-  ```ChangerFenetre ${AppName}```
- **Bascule vers** l'application **AppName.**  
+  ```ChangerFenetre```
+ **Bascule vers** vers une **autre** application.  
    
    **Exemples :**   
 ```ChangerFenetre Konsole```  
@@ -88,20 +88,15 @@ pour ubuntu :
 
 ```
 
-sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/be-root:/nocomprendo/xUbuntu_19.10/ /' > /etc/apt/sources.list.d/home:be-root:nocomprendo.list"  
-
-wget -nv https://download.opensuse.org/repositories/home:be-root:nocomprendo/xUbuntu_19.10/Release.key -O Release.key  
-
-sudo apt-key add - < Release.key  
-
-sudo apt update  
-
-sudo apt upgrade  
-
-sudo apt install nocomprendo espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify-bin sox lame libsox-fmt-mp3 xbacklight  
-
-./install.sh  
-
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/be-root:/nocomprendo/xUbuntu_19.10/ /' > /etc/apt/sources.list.d/home:be-root:nocomprendo.list"    
+wget -nv https://download.opensuse.org/repositories/home:be-root:nocomprendo/xUbuntu_19.10/Release.key -O Release.key    
+sudo apt-key add - < Release.key    
+sudo apt update    
+sudo apt upgrade    
+sudo apt install nocomprendo espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify-bin sox lame libsox-fmt-mp3 xbacklight    
+git clone https://github.com/handyopensource/dvkbuntu-script-tts.git    
+cd dvkbuntu-script-tts  
+./install.sh    
 
 ``` 
   
