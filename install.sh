@@ -28,13 +28,14 @@ cp FacteurEchelle /usr/bin/FacteurEchelle
 cp ChangerFenetre /usr/bin/ChangerFenetre
 cp KillLastScript /usr/bin/KillLastScript
 
-mkdir -p /home/"$SUDO_USER"/.config/nocomprendo/
-tar xvzf fr_FR.tar.gz -C /home/"$SUDO_USER"/.config/nocomprendo/
+repertoire="/home/"$SUDO_USER"/.config/nocomprendo/"
+[[ -d "$repertoire" ]] && rm -rf "$repertoire"
+tar xvzf fr_FR.tar.gz -C /usr/share/nocomprendo/
 
-if [ $LANG == "fr_BE.UTF-8" ]
+langsyst=$(echo $LANG | awk -F\. '{print $1}')
+
+if [ $LANG !== "fr_FR.UTF-8" && $LANG !== "en_US.UTF-8" ]
 then
-    ln -s /usr/share/pocketsphinx/fr_FR/ /usr/share/pocketsphinx/fr_BE
-    ln -s /home/"$SUDO_USER"/.config/nocomprendo/fr_FR/ /home/"$SUDO_USER"/.config/nocomprendo/fr_BE
+    ln -s /usr/share/pocketsphinx/fr_FR/ "/usr/share/pocketsphinx/$langsyst"
+    ln -s /usr/share/nocomprendo/fr_FR/ "/usr/share/nocomprendo/$langsyst"
 fi
-
-chown -R $SUDO_USER /home/"$SUDO_USER"/.config/nocomprendo/
