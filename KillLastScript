@@ -1,0 +1,4 @@
+#!/bin/bash
+
+kill $!
+kill $(pgrep -f "/etc/alternatives/tts")
