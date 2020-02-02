@@ -27,5 +27,12 @@ cp FenetreCourante /usr/bin/FenetreCourante
 cp FacteurEchelle /usr/bin/FacteurEchelle
 cp ChangerFenetre /usr/bin/ChangerFenetre
 
+mkdir -p /home/"$SUDO_USER"/.config/nocomprendo/
 tar xvzf fr_FR.tar.gz -C /home/"$SUDO_USER"/.config/nocomprendo/
 chown -R $SUDO_USER /home/"$SUDO_USER"/.config/nocomprendo/
+
+if [ $LANG == "fr_BE.UTF-8" ]
+then
+    sudo cp /usr/share/pocketsphinx/fr_FR /usr/share/pocketsphinx/fr_BE
+    cp /home/"$SUDO_USER"/.config/nocomprendo/fr_FR /home/"$SUDO_USER"/.config/nocomprendo/fr_BE
+fi

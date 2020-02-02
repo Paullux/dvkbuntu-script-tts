@@ -89,14 +89,14 @@ pour ubuntu :
 # ajout du dépôt de nocomprendo un assistant vocal    
 sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/be-root:/nocomprendo/xUbuntu_19.10/ /' > /etc/apt/sources.list.d/home:be-root:nocomprendo.list"    
 wget -nv https://download.opensuse.org/repositories/home:be-root:nocomprendo/xUbuntu_19.10/Release.key -O Release.key    
-sudo apt-key add - < Release.key      
+sudo apt-key add - < Release.key
   
 # mise à jour du système      
 sudo apt update    
 sudo apt upgrade   
   
 # installation des dépendances :    
-sudo apt install nocomprendo espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify-bin sox lame libsox-fmt-mp3 xbacklight lemonbar    
+sudo apt install nocomprendo espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify-bin sox lame libsox-fmt-mp3 xbacklight lemonbar python3-pip    
 sudo pip3 install google_speech  
   
 # travail de l'équipe dvkbuntu   
