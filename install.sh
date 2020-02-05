@@ -31,11 +31,3 @@ cp KillLastScript /usr/bin/KillLastScript
 repertoire="/home/"$SUDO_USER"/.config/nocomprendo/"
 [[ -d "$repertoire" ]] && rm -rf "$repertoire"
 tar xvzf fr_FR.tar.gz -C /usr/share/nocomprendo/
-
-langsyst=$(echo $LANG | awk -F\. '{print $1}')
-
-if [ $LANG !== "fr_FR.UTF-8" && $LANG !== "en_US.UTF-8" ]
-then
-    ln -s /usr/share/pocketsphinx/fr_FR/ "/usr/share/pocketsphinx/$langsyst"
-    ln -s /usr/share/nocomprendo/fr_FR/ "/usr/share/nocomprendo/$langsyst"
-fi
