@@ -82,7 +82,7 @@ Ouvre un **rectangle de sélection** pour y **lire le contenu.**
 arrêtez complétement __*nocomprendo*__ avant installation   
    
 ## Dépendance & installation :  
-***espeak, wmctrl, dvkbuntu, xdotool, tesseract-ocr-fra sous Ubuntu ( ou tesseract-data-fra sous Arch), scrot, imagemagick, notify-send, sox, lame, libsox-fmt-mp3, xbacklight, nocomprendo, google_speech.***  
+***espeak, wmctrl, dvkbuntu, xdotool, tesseract-ocr-fra sous Ubuntu ( ou tesseract-data-fra sous Arch), scrot, imagemagick, notify-send, sox, lame, libsox-fmt-mp3, xbacklight, nocomprendo, git, google_speech.***  
 pour ubuntu :   
 
 ```
@@ -96,7 +96,7 @@ sudo apt update
 sudo apt upgrade   
   
 # installation des dépendances :    
-sudo apt install nocomprendo espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify-bin sox lame libsox-fmt-mp3 xbacklight lemonbar python3-pip    
+sudo apt install nocomprendo espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify-bin sox lame libsox-fmt-mp3 xbacklight lemonbar git python3-pip    
 sudo pip3 install google_speech  
   
 # travail de l'équipe dvkbuntu   
