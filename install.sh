@@ -30,4 +30,4 @@ cp KillLastScript /usr/bin/KillLastScript
 
 repertoire="/home/"$SUDO_USER"/.config/nocomprendo/"
 [[ -d "$repertoire" ]] && rm -rf "$repertoire"
-tar xvzf fr_FR.tar.gz -C /usr/share/nocomprendo/
+tar xvzf fr_FR.tar.gz -C /usr/share/nocomprendo/defsets/
