@@ -7,75 +7,168 @@
 3(2) tt rr ww aa zz
 active aa kk tt ii vv
 active(2) aa kk tt ii vv ee
-augmenter oo gg mm an tt ei
-augmenter(2) oo gg mm an tt ei rr
-baisser bb ai ss ei
-baisser(2) bb ai ss ei rr
+active(3) aa kk tt ii vv ee zz
+active(4) aa kk tt ii vv ei
+active(5) aa kk tt ii vv ei rr
+active(6) aa kk tt ii vv zz
+arrêter aa rr ai tt
+arrêter(2) aa rr ai tt ei
+arrêter(3) aa rr ai tt ei rr
+augmenter oo gg mm an tt
+augmenter(2) oo gg mm an tt ai
+augmenter(3) oo gg mm an tt ai tt
+augmenter(4) oo gg mm an tt ee
+augmenter(5) oo gg mm an tt ei
+augmenter(6) oo gg mm an tt ei rr
+baisser bb ai ss
+baisser(2) bb ai ss ee
+baisser(3) bb ai ss ei
+baisser(4) bb ai ss ei rr
 change ch an jj
 change(2) ch an jj ai
 change(3) ch an jj ai tt
 change(4) ch an jj ee
-change(5) ch an jj ei
-change(6) ch an jj ei rr
+change(5) ch an jj ee zz
+change(6) ch an jj ei
+change(7) ch an jj ei rr
+change(8) ch an jj ei zz
+discord dd ii ss kk oo rr dd
+discord(2) dd ii ss kk oo rr dd ee
 donne dd oo nn
 donne(2) dd oo nn ee
+donne(3) dd oo nn ee zz
+donne(4) dd oo nn ei
+donne(5) dd oo nn ei rr
+donne(6) dd oo nn zz
 échelle ai ch ai ll
 échelle(2) ai ch ai ll ee
-éteindre ai tt in dd rr
-éteindre(2) ai tt in dd rr ee
+échelle(3) ai ch ai ll ee zz
+échelle(4) ai ch ai ll zz
+échelle(5) dd ai ch ai ll
+échelle(6) dd ai ch ai ll ee
+échelle(7) dd ai ch ai ll ee zz
+échelle(8) dd ai ch ai ll zz
+éteindre ai tt in
+éteindre(2) ai tt in dd rr
+éteindre(3) ai tt in dd rr ee
+éteindre(4) ai tt in tt
 facteur ff aa kk tt oe rr
+facteur(2) ff aa kk tt oe rr zz
 fenêtre ff ee nn ai tt rr
 fermer ff ai rr mm
 fermer(2) ff ai rr mm ei
 fermer(3) ff ai rr mm ei rr
-lheure ll oe rr
-lheure(2) ll oe rr ee
-lheure(3) ll oe rr ee zz
-lheure(4) ll oe rr zz
-lheure(5) oe rr
-lheure(6) oe rr ee
-lheure(7) oe rr ee zz
-lheure(8) oe rr zz
+lecteur ll ai kk tt oe rr
+lecteur(2) ll ai kk tt uu rr
+lecteur(3) ll ai kk tt uu rr ee
+lecteur(4) ll ai kk tt uu rr ee zz
+lheure ll oe rr ee
+lheure(2) oe rr
+lheure(3) oe rr ee
 lire ll ii rr
 lire(2) ll ii rr ee
+lire(3) ll ii rr ee zz
+lire(4) ll ii rr zz
+lire(5) ll ii zz ei
+lire(6) ll ii zz ei zz
 liste ll ii ss tt
 liste(2) ll ii ss tt ee
-liste(3) ll ii ss tt ei
-liste(4) ll ii ss tt ei rr
+liste(3) ll ii ss tt ee zz
+liste(4) ll ii ss tt ei
+liste(5) ll ii ss tt ei rr
+liste(6) ll ii ss tt ei zz
 luminosité ll uu mm ii nn oo zz ii tt ei
-redémarrer rr ee dd ai mm aa rr ei
-redémarrer(2) rr ee dd ai mm aa rr ei rr
-sélectionner ss ai ll ai kk ss yy oo nn
-sélectionner(2) ss ai ll ai kk ss yy oo nn ei
+notification nn oo tt ii ff ii kk aa ss yy on
+ouvrir ou vv rr
+ouvrir(2) ou vv rr ii rr
+pc pp ei ss ei
+point0 pp ww in tt zz ei rr au
+point0(2) pp ww in zz ei rr au
+point1 pp ww in tt un
+point1(2) pp ww in tt un nn
+point1(3) pp ww in un
+point1(4) pp ww in un nn
+point2 pp ww in dd eu
+point2(2) pp ww in dd eu zz
+point2(3) pp ww in tt dd eu
+point2(4) pp ww in tt dd eu zz
+point3 pp ww in rr ww aa
+point3(2) pp ww in tt rr ww aa
+point3(3) pp ww in tt rr ww aa zz
+point3(4) pp ww in tt tt rr ww aa zz
+point4 pp ww in kk aa tt
+point4(2) pp ww in kk aa tt rr
+point4(3) pp ww in kk aa tt rr ee
+point4(4) pp ww in tt kk aa tt
+point4(5) pp ww in tt kk aa tt rr
+point4(6) pp ww in tt kk aa tt rr ee
+point5 pp ww in ss in
+point5(2) pp ww in ss in kk
+point5(3) pp ww in ss in kk ee
+point5(4) pp ww in tt ss in
+point5(5) pp ww in tt ss in kk
+point5(6) pp ww in tt ss in kk ee
+point6 pp ww in ss ii
+point6(2) pp ww in ss ii ss
+point6(3) pp ww in ss ii ss ee
+point6(4) pp ww in ss ii zz
+point6(5) pp ww in tt ss ii
+point6(6) pp ww in tt ss ii ss
+point6(7) pp ww in tt ss ii ss ee
+point6(8) pp ww in tt ss ii zz
+point7 pp ww in ss ai tt
+point7(2) pp ww in tt ss ai tt
+point8 pp ww in tt uy ii
+point8(2) pp ww in tt uy ii tt
+point8(3) pp ww in tt uy ii tt ee
+point8(4) pp ww in uy ii
+point8(5) pp ww in uy ii tt
+point8(6) pp ww in uy ii tt ee
+point9 pp ww in nn eu ff
+point9(2) pp ww in nn oe ff
+point9(3) pp ww in tt nn eu ff
+point9(4) pp ww in tt nn oe ff
+redémarrer rr dd ei mm aa rr ei
+redémarrer(2) rr ee dd ai mm aa rr
+redémarrer(3) rr ee dd ai mm aa rr ee
+redémarrer(4) rr ee dd ai mm aa rr ei
+redémarrer(5) rr ee dd ei mm aa rr ei
+sélectionner ss ai ll ai kk ss yy on
+sélectionner(2) ss ai ll ai kk ss yy oo nn
+sélectionner(3) ss ai ll ai kk ss yy oo nn ei
+sélectionner(4) ss ei ll ai kk ss yy on
 souris ss ou rr ii
+souris(2) ss ou rr ii zz
 volume vv oo ll uu mm
 volume(2) vv oo ll uu mm ee
+volume(3) vv oo ll uu mm ee zz
+volume(4) vv oo ll uu mm zz
 4 : donne lheure : /usr/bin/LectureHeure
 4 : facteur échelle : /usr/bin/FacteurEchelle
-4 : facteur échelle 1 .0 : /usr/bin/FacteurEchelle 1.0
-4 : facteur échelle 1 .1 : /usr/bin/FacteurEchelle 1.1
-4 : facteur échelle 1 .2 : /usr/bin/FacteurEchelle 1.2
-4 : facteur échelle 1 .3 : /usr/bin/FacteurEchelle 1.3
-4 : facteur échelle 1 .4 : /usr/bin/FacteurEchelle 1.4
-4 : facteur échelle 1 .5 : /usr/bin/FacteurEchelle 1.5
-4 : facteur échelle 1 .6 : /usr/bin/FacteurEchelle 1.6
-4 : facteur échelle 1 .7 : /usr/bin/FacteurEchelle 1.7
-4 : facteur échelle 1 .8 : /usr/bin/FacteurEchelle 1.8
-4 : facteur échelle 1 .9 : /usr/bin/FacteurEchelle 1.9
+4 : facteur échelle 1 point0 : /usr/bin/FacteurEchelle 1.0
+4 : facteur échelle 1 point1 : /usr/bin/FacteurEchelle 1.1
+4 : facteur échelle 1 point2 : /usr/bin/FacteurEchelle 1.2
+4 : facteur échelle 1 point3 : /usr/bin/FacteurEchelle 1.3
+4 : facteur échelle 1 point4 : /usr/bin/FacteurEchelle 1.4
+4 : facteur échelle 1 point5 : /usr/bin/FacteurEchelle 1.5
+4 : facteur échelle 1 point6 : /usr/bin/FacteurEchelle 1.6
+4 : facteur échelle 1 point7 : /usr/bin/FacteurEchelle 1.7
+4 : facteur échelle 1 point8 : /usr/bin/FacteurEchelle 1.8
+4 : facteur échelle 1 point9 : /usr/bin/FacteurEchelle 1.9
 4 : facteur échelle 2 : /usr/bin/FacteurEchelle 2.0
 4 : facteur échelle 1 : /usr/bin/FacteurEchelle 1.0
 4 : facteur échelle 3 : /usr/bin/FacteurEchelle 3.0
-4 : facteur échelle 2 .0 : /usr/bin/FacteurEchelle 2.0
-4 : facteur échelle 2 .1 : /usr/bin/FacteurEchelle 2.1
-4 : facteur échelle 2 .2 : /usr/bin/FacteurEchelle 2.2
-4 : facteur échelle 2 .3 : /usr/bin/FacteurEchelle 2.3
-4 : facteur échelle 2 .4 : /usr/bin/FacteurEchelle 2.4
-4 : facteur échelle 2 .5 : /usr/bin/FacteurEchelle 2.5
-4 : facteur échelle 2 .6 : /usr/bin/FacteurEchelle 2.6
-4 : facteur échelle 2 .7 : /usr/bin/FacteurEchelle 2.7
-4 : facteur échelle 2 .8 : /usr/bin/FacteurEchelle 2.8
-4 : facteur échelle 2 .9 : /usr/bin/FacteurEchelle 2.9
-4 : facteur échelle 3 .0 : /usr/bin/FacteurEchelle 3.0
+4 : facteur échelle 2 point0 : /usr/bin/FacteurEchelle 2.0
+4 : facteur échelle 2 point1 : /usr/bin/FacteurEchelle 2.1
+4 : facteur échelle 2 point2 : /usr/bin/FacteurEchelle 2.2
+4 : facteur échelle 2 point3 : /usr/bin/FacteurEchelle 2.3
+4 : facteur échelle 2 point4 : /usr/bin/FacteurEchelle 2.4
+4 : facteur échelle 2 point5 : /usr/bin/FacteurEchelle 2.5
+4 : facteur échelle 2 point6 : /usr/bin/FacteurEchelle 2.6
+4 : facteur échelle 2 point7 : /usr/bin/FacteurEchelle 2.7
+4 : facteur échelle 2 point8 : /usr/bin/FacteurEchelle 2.8
+4 : facteur échelle 2 point9 : /usr/bin/FacteurEchelle 2.9
+4 : facteur échelle 3 point0 : /usr/bin/FacteurEchelle 3.0
 4 : augmenter volume : /usr/bin/amixer sset 'Master' 10+
 4 : baisser volume : /usr/bin/amixer sset 'Master' 10-
 4 : augmenter luminosité : /usr/bin/xbacklight +10
@@ -86,6 +179,9 @@ volume(2) vv oo ll uu mm ee
 4 : lire souris : /usr/bin/ScreenReader -m
 4 : lire fenêtre : /usr/bin/ScreenReader -w
 4 : lire sélectionner : /usr/bin/ScreenReader -s
-4 : éteindre : /usr/bin/Power shutdown
-4 : redémarrer : /usr/bin/Power reboot
+4 : éteindre pc : /usr/bin/Power shutdown
+4 : redémarrer pc : /usr/bin/Power reboot
 4 : change fenêtre active : /usr/bin/ChangerFenetre
+4 : lecteur notification : /usr/bin/LectureNotifs
+4 : arrêter lire : /usr/bin/KillLastScript
+4 : ouvrir discord : /usr/bin/discord

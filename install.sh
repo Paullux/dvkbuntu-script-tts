@@ -8,7 +8,7 @@ chmod +x /usr/local/bin/google_speech_fr
 
 cat << FIN > "/usr/bin/espeak_fr"
 #!/bin/bash
-espeak -v mb/mb-fr4 -s 200 "\$1"
+espeak -v mb/mb-fr4 "\$1"
 FIN
 chmod +x /usr/bin/espeak_fr
 
