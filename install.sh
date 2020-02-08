@@ -71,7 +71,7 @@ navigateur=navigateur.cmd
 souris=souris.cmd
 FIN
 
-chown -R $SUDO_USER "/home/$SUDO_USER/.config/BeRoot/NoComprendo.conf"
+chown -R $SUDO_USER "/home/$SUDO_USER/.config/BeRoot/"
 
 mkdir -p "/etc/skel/.config/BeRoot/"
 
