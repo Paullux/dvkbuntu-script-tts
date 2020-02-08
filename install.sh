@@ -54,7 +54,7 @@ osdDuration=3000
 osdOn=true
 osdPosition=@Point(100 250)
 osdSize=@Size(450 40)
-rFontSize=20
+rFontSize=18
 rInvertColor=true
 removeBadUtterance=false
 speak=true
@@ -108,4 +108,56 @@ konsole=konsole.cmd
 metas=metas.cmd
 navigateur=navigateur.cmd
 souris=souris.cmd
+FIN
+
+mkdir -p "/home/$SUDO_USER/.config/autostart/"
+
+cat << FIN > "/home/$SUDO_USER/.config/autostart/nocomprendo.desktop"
+[Desktop Entry]
+Categories=KDE;Utility;
+Comment[fr_FR]=Commande vocale pour les systèmes Unix.
+Comment=Commande vocale pour les systèmes Unix.
+Exec=nocomprendo
+GenericName[fr_FR]=Commande vocale
+GenericName=Commande vocale
+Icon=/usr/share/icons/nocomprendo.png
+MimeType=
+Name[fr_FR]=NoComprendo
+Name=NoComprendo
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+FIN
+
+chown -R $SUDO_USER "/home/$SUDO_USER/.config/autostart/"
+
+mkdir -p "/etc/skel/.config/autostart/"
+
+cat << FIN > "/etc/skel/.config/autostart/nocomprendo.desktop"
+[Desktop Entry]
+Categories=KDE;Utility;
+Comment[fr_FR]=Commande vocale pour les systèmes Unix.
+Comment=Commande vocale pour les systèmes Unix.
+Exec=nocomprendo
+GenericName[fr_FR]=Commande vocale
+GenericName=Commande vocale
+Icon=/usr/share/icons/nocomprendo.png
+MimeType=
+Name[fr_FR]=NoComprendo
+Name=NoComprendo
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
 FIN
