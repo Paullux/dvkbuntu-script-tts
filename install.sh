@@ -33,3 +33,79 @@ repertoire="/home/"$SUDO_USER"/.config/nocomprendo/"
 repertoire="/home/"$SUDO_USER"/.config/BeRoot/"
 [[ -d "$repertoire" ]] && rm -rf "$repertoire"
 tar xvzf fr_FR.tar.gz -C /usr/share/nocomprendo/defsets/
+
+mkdir -p "/home/$SUDO_USER/.config/BeRoot/"
+
+cat << FIN > "/home/$SUDO_USER/.config/BeRoot/NoComprendo.conf"
+[General]
+age=45
+autoStart=true
+confPos=@Point(99 69)
+confSize=@Size(511 519)
+defLang=fr_FR
+gender=2
+glideRate=20
+glideStep=2
+mainPos=@Point(0 29)
+mainSize=@Size(1920 932)
+mouseStep=20
+osdAll=true
+osdDuration=3000
+osdOn=true
+osdPosition=@Point(100 250)
+osdSize=@Size(450 40)
+rFontSize=20
+rInvertColor=true
+removeBadUtterance=false
+speak=true
+splitter=@ByteArray(\0\0\0\xff\0\0\0\x1\0\0\0\x2\0\0\x1\0\0\0\x1\x1a\x1\xff\xff\xff\xff\x1\0\0\0\x1\0)
+useSysTray=true
+
+[fr]
+base=base.cmd
+dvkbuntu=dvkbuntu.cmd
+kde=kde.cmd
+konsole=konsole.cmd
+metas=metas.cmd
+navigateur=navigateur.cmd
+souris=souris.cmd
+FIN
+
+chown -R $SUDO_USER "/home/$SUDO_USER/.config/BeRoot/NoComprendo.conf"
+
+mkdir -p "/etc/skel/.config/BeRoot/"
+
+cat << FIN > "/etc/skel/.config/BeRoot/NoComprendo.conf"
+[General]
+age=45
+autoStart=true
+confPos=@Point(99 69)
+confSize=@Size(511 519)
+defLang=fr_FR
+gender=2
+glideRate=20
+glideStep=2
+mainPos=@Point(0 29)
+mainSize=@Size(1920 932)
+mouseStep=20
+osdAll=true
+osdDuration=3000
+osdOn=true
+osdPosition=@Point(100 250)
+osdSize=@Size(450 40)
+rFontSize=20
+rInvertColor=true
+removeBadUtterance=false
+speak=true
+splitter=@ByteArray(\0\0\0\xff\0\0\0\x1\0\0\0\x2\0\0\x1\0\0\0\x1\x1a\x1\xff\xff\xff\xff\x1\0\0\0\x1\0)
+useSysTray=true
+
+[fr]
+base=base.cmd
+dvkbuntu=dvkbuntu.cmd
+kde=kde.cmd
+konsole=konsole.cmd
+metas=metas.cmd
+navigateur=navigateur.cmd
+souris=souris.cmd
+FIN
