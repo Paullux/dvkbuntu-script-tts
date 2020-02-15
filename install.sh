@@ -56,17 +56,19 @@ mkdir -p "/home/$SUDO_USER/.config/BeRoot/"
 
 cat << FIN > "/home/$SUDO_USER/.config/BeRoot/NoComprendo.conf"
 [General]
-age=45
+ask2Quit=false
 autoStart=true
+comPos=@Point(199 269)
+comSize=@Size(613 369)
 confPos=@Point(99 69)
 confSize=@Size(511 519)
 defLang=fr_FR
-gender=2
 glideRate=20
 glideStep=2
-mainPos=@Point(0 29)
-mainSize=@Size(1920 932)
-mouseStep=20
+hideInTaskBar=false
+mainPos=@Point(199 169)
+mainSize=@Size(600 450)
+mouseStep=10
 osdAll=true
 osdDuration=3000
 osdOn=true
@@ -75,9 +77,17 @@ osdSize=@Size(450 40)
 rFontSize=18
 rInvertColor=true
 removeBadUtterance=false
+selPos=@Point(300 300)
+selSize=@Size(500 426)
+setPos=@Point(350 150)
+setSize=@Size(951 720)
+setSplit=@ByteArray(\0\0\0\xff\0\0\0\x1\0\0\0\x2\0\0\x1\0\0\0\x1\0\x1\xff\xff\xff\xff\x1\0\0\0\x1\0)
 speak=true
 splitter=@ByteArray(\0\0\0\xff\0\0\0\x1\0\0\0\x2\0\0\x1\0\0\0\x1\x1a\x1\xff\xff\xff\xff\x1\0\0\0\x1\0)
 useSysTray=true
+vocPos=@Point(250 250)
+vocSize=@Size(920 640)
+wordsToLM=true
 
 [fr]
 base=base.cmd
@@ -87,6 +97,11 @@ konsole=konsole.cmd
 metas=metas.cmd
 navigateur=navigateur.cmd
 souris=souris.cmd
+
+[fr_FR]
+age=20
+gender=1
+voiceVariant=2
 FIN
 
 chown -R $SUDO_USER "/home/$SUDO_USER/.config/BeRoot/"
@@ -95,28 +110,38 @@ mkdir -p "/etc/skel/.config/BeRoot/"
 
 cat << FIN > "/etc/skel/.config/BeRoot/NoComprendo.conf"
 [General]
-age=45
+ask2Quit=false
 autoStart=true
+comPos=@Point(199 269)
+comSize=@Size(613 369)
 confPos=@Point(99 69)
 confSize=@Size(511 519)
 defLang=fr_FR
-gender=2
 glideRate=20
 glideStep=2
-mainPos=@Point(0 29)
-mainSize=@Size(1920 932)
-mouseStep=20
+hideInTaskBar=false
+mainPos=@Point(199 169)
+mainSize=@Size(600 450)
+mouseStep=10
 osdAll=true
 osdDuration=3000
 osdOn=true
 osdPosition=@Point(100 250)
 osdSize=@Size(450 40)
-rFontSize=20
+rFontSize=18
 rInvertColor=true
 removeBadUtterance=false
+selPos=@Point(300 300)
+selSize=@Size(500 426)
+setPos=@Point(350 150)
+setSize=@Size(951 720)
+setSplit=@ByteArray(\0\0\0\xff\0\0\0\x1\0\0\0\x2\0\0\x1\0\0\0\x1\0\x1\xff\xff\xff\xff\x1\0\0\0\x1\0)
 speak=true
 splitter=@ByteArray(\0\0\0\xff\0\0\0\x1\0\0\0\x2\0\0\x1\0\0\0\x1\x1a\x1\xff\xff\xff\xff\x1\0\0\0\x1\0)
 useSysTray=true
+vocPos=@Point(250 250)
+vocSize=@Size(920 640)
+wordsToLM=true
 
 [fr]
 base=base.cmd
@@ -126,4 +151,9 @@ konsole=konsole.cmd
 metas=metas.cmd
 navigateur=navigateur.cmd
 souris=souris.cmd
+
+[fr_FR]
+age=20
+gender=1
+voiceVariant=2
 FIN
