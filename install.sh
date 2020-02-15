@@ -1,5 +1,20 @@
 #!/bin/bash
 
+# Ajout du dépôt de nocomprendo un assistant vocal  
+sh -c "echo 'deb http://download.opensuse.org/repositories/home:/be-root:/nocomprendo/xUbuntu_19.10/ /' > /etc/apt/sources.list.d/home:be-root:nocomprendo.list"    
+wget -nv https://download.opensuse.org/repositories/home:be-root:nocomprendo/xUbuntu_19.10/Release.key -O Release.key    
+apt-key add - < Release.key
+rm Release.key
+
+# Mise à jour du système 
+apt update    
+apt upgrade   
+
+# Installation des dépendances :    
+apt install nocomprendo espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify-bin sox lame libsox-fmt-mp3 xbacklight lemonbar git python3-pip mbrola-fr1
+pip3 install google_speech
+
+# Ajout des Wrappers (alternative en français de tts).
 cat << FIN > "/usr/local/bin/google_speech_fr"
 #!/bin/bash
 google_speech -l fr-fr "\$1"
@@ -12,11 +27,13 @@ espeak -v mb/mb-fr1 -s 110 "\$1"
 FIN
 chmod +x /usr/bin/espeak_fr
 
+# Ajout des Alternatives (choix possible) de toutes les voix différentes de tts
 update-alternatives --install /etc/alternatives/tts.gz tts "/usr/local/bin/google_speech_fr" 10
 update-alternatives --install /etc/alternatives/tts.gz tts "/usr/bin/espeak_fr" 5
 update-alternatives --install /etc/alternatives/tts.gz tts "/usr/local/bin/google_speech" 2
 update-alternatives --install /etc/alternatives/tts.gz tts "/usr/bin/espeak" 1
 
+# Installation des scripts dans le système
 cp ScreenReader /usr/bin/ScreenReader
 cp Power /usr/bin/Power
 cp ListeFenetresOuvertes /usr/bin/ListeFenetresOuvertes
@@ -28,6 +45,7 @@ cp FacteurEchelle /usr/bin/FacteurEchelle
 cp ChangerFenetre /usr/bin/ChangerFenetre
 cp KillLastScript /usr/bin/KillLastScript
 
+# Paramétrages de NoComprendo
 repertoire="/home/"$SUDO_USER"/.config/nocomprendo/"
 [[ -d "$repertoire" ]] && rm -rf "$repertoire"
 repertoire="/home/"$SUDO_USER"/.config/BeRoot/"

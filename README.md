@@ -85,27 +85,16 @@ arrêtez complétement __*nocomprendo*__ avant installation
 ***espeak, wmctrl, dvkbuntu, xdotool, tesseract-ocr-fra sous Ubuntu ( ou tesseract-data-fra sous Arch), scrot, imagemagick, notify-send, sox, lame, libsox-fmt-mp3, xbacklight, nocomprendo, git, google_speech, mbrola voice.***  
 pour ubuntu :   
 
-```
-# ajout du dépôt de nocomprendo un assistant vocal    
-sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/be-root:/nocomprendo/xUbuntu_19.10/ /' > /etc/apt/sources.list.d/home:be-root:nocomprendo.list"    
-wget -nv https://download.opensuse.org/repositories/home:be-root:nocomprendo/xUbuntu_19.10/Release.key -O Release.key    
-sudo apt-key add - < Release.key
+```   
+# travail de l'équipe dvkbuntu  
+rm -rf dvkbuntu-script-tts # si précédemment cloner à ne pas oublier   
+# Autres commande dans tout les cas   
+git clone https://github.com/handyopensource/dvkbuntu-script-tts.git       
+cd dvkbuntu-script-tts       
+sudo ./install.sh       
   
-# mise à jour du système      
-sudo apt update    
-sudo apt upgrade   
-  
-# installation des dépendances :    
-sudo apt install nocomprendo espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify-bin sox lame libsox-fmt-mp3 xbacklight lemonbar git python3-pip mbrola-fr1    
-sudo pip3 install google_speech  
-  
-# travail de l'équipe dvkbuntu   
-git clone https://github.com/handyopensource/dvkbuntu-script-tts.git     
-cd dvkbuntu-script-tts     
-sudo ./install.sh     
-  
-# Pour choisir son service de vocalisation, soit celui de Google (logiciel libre) qui passe par le réseaux ou espeak qui est local, libre et open source.  
-sudo update-alternatives --config tts   
+# Pour choisir son service de vocalisation, soit celui de Google (logiciel libre) qui passe par le réseaux ou espeak qui est local, libre et open source.     
+sudo update-alternatives --config tts     
 
 ```  
 
