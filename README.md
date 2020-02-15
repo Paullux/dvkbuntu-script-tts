@@ -88,7 +88,7 @@ pour ubuntu :
 ```   
 # travail de l'équipe dvkbuntu  
 rm -rf dvkbuntu-script-tts # si précédemment cloner à ne pas oublier   
-# Autres commande dans tout les cas   
+# Autres commandes dans tout les cas   
 git clone https://github.com/handyopensource/dvkbuntu-script-tts.git       
 cd dvkbuntu-script-tts       
 sudo ./install.sh       
