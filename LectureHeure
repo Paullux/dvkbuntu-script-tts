@@ -81,4 +81,4 @@ fi
 
 ##### Notification de l'heure #####
 /etc/alternatives/tts "il est $HEURE $nombresDheure et $MINUTE $nombresDeMinute" 
-notify-send -i "/usr/share/icons/HighContrast/scalable/actions-extra/history-view.svg" "`date`"
+#notify-send -i "/usr/share/icons/HighContrast/scalable/actions-extra/history-view.svg" "`date`"
