@@ -11,27 +11,41 @@ apt update
 apt upgrade   
 
 # Installation des dépendances :    
-apt install nocomprendo espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify-bin sox lame libsox-fmt-mp3 xbacklight lemonbar git python3-pip mbrola-fr1
+apt install nocomprendo espeak wmctrl dvkbuntu xdotool tesseract-ocr-fra scrot imagemagick libnotify-bin sox lame libsox-fmt-mp3 xbacklight lemonbar git python3-pip mbrola-fr1 espeak-ng
 pip3 install google_speech
 
 # Ajout des Wrappers (alternative en français de tts).
-cat << FIN > "/usr/local/bin/google_speech_fr"
+cat << FIN > "/usr/local/bin/google_speech-multilanguage"
 #!/bin/bash
-google_speech -l fr-fr "\$1"
+if [ -f "$3" ];then
+ google_speech -l "$2" "$1" -o "$3"
+else
+ if [ ! -f "$2" ]; then
+  google_speech -l "$2" "$1"
+ else
+  google_speech -l "fr-fr" "$1"
+ fi
+fi
 FIN
-chmod +x /usr/local/bin/google_speech_fr
+chmod +x /usr/local/bin/google_speech-multilanguage
 
-cat << FIN > "/usr/bin/espeak_fr"
+cat << FIN > "/usr/bin/espeak-ng-multilanguage"
 #!/bin/bash
-espeak -v mb/mb-fr1 -s 110 "\$1"
+if [ -f "$3" ];then
+  espeak-ng -v "$2" "$1" -w "$3"
+else
+ if [ ! -f "$2" ]; then
+  espeak-ng -v "$2" "$1"
+ else
+  espeak-ng -v "fr-fr" "$1"
+ fi
+fi 
 FIN
-chmod +x /usr/bin/espeak_fr
+chmod +x /usr/bin/espeak-ng-multilanguage
 
 # Ajout des Alternatives (choix possible) de toutes les voix différentes de tts
-update-alternatives --install /etc/alternatives/tts.gz tts "/usr/local/bin/google_speech_fr" 10
-update-alternatives --install /etc/alternatives/tts.gz tts "/usr/bin/espeak_fr" 5
-update-alternatives --install /etc/alternatives/tts.gz tts "/usr/local/bin/google_speech" 2
-update-alternatives --install /etc/alternatives/tts.gz tts "/usr/bin/espeak" 1
+sudo update-alternatives --install /etc/alternatives/tts.gz tts "/usr/local/bin/google_speech-multilanguage" 20
+sudo update-alternatives --install /etc/alternatives/tts.gz tts "/usr/bin/espeak-ng-multilanguage" 15
 
 # Installation des scripts dans le système
 cp ScreenReader /usr/bin/ScreenReader
