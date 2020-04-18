@@ -13,8 +13,6 @@
 HEURE=`date '+%H'`
 MINUTE=`date '+%M'`
 
-if [ $LANGUAGE = "fr" ]
-then
 if [ $HEURE -gt 1 ]
 then
     nombresDheure="heures"
@@ -35,13 +33,21 @@ heure1=${HEURE:1:1}
 if [ $heure0 = 0 ]
 then
     HEURE=$heure1
-    if [ $heure1 = 1 ]
+    if [ $heure1 = 0 ]
+    then
+        HEURE="minuit"
+        nombresDheure=""
+    elif [ $heure1 = 1 ]
     then
         HEURE="une"
     fi
 elif [ $heure0 = 2 ] && [ $heure1 = 1 ]
 then
     HEURE="vingt-et-une"
+elif [ $heure0 = 1 ] && [ $heure1 = 2 ]
+then
+    HEURE="midi"
+    nombresDheure=""
 fi
 
 minute0=${MINUTE:0:1}
@@ -84,6 +90,3 @@ fi
 ##### Notification de l'heure #####
 /etc/alternatives/tts "il est $HEURE $nombresDheure et $MINUTE $nombresDeMinute" 
 #notify-send -i "/usr/share/icons/HighContrast/scalable/actions-extra/history-view.svg" "`date`"
-else
-/etc/alternatives/tts "It’s $HEURE $MINUTE" "en"
-fi
