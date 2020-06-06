@@ -1,10 +1,8 @@
 #!/bin/bash
 
 # Ajout du dépôt de nocomprendo un assistant vocal  
-sh -c "echo 'deb http://download.opensuse.org/repositories/home:/be-root:/nocomprendo/xUbuntu_19.10/ /' > /etc/apt/sources.list.d/home:be-root:nocomprendo.list"    
-wget -nv https://download.opensuse.org/repositories/home:be-root:nocomprendo/xUbuntu_19.10/Release.key -O Release.key    
-apt-key add - < Release.key
-rm Release.key
+sh -c "echo 'deb http://download.opensuse.org/repositories/home:/be-root:/nocomprendo/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:be-root:nocomprendo.list"    
+wget -nv https://download.opensuse.org/repositories/home:be-root:nocomprendo/xUbuntu_20.04/Release.key -O "/etc/apt/trusted.gpg.d/home:be-root:nocomprendo.asc"    
 
 # Mise à jour du système 
 apt update    
